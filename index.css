@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/gif/portada.gif') center/cover no-repeat;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  height: 100vh;
+}
+
+.nav {
+  align-self: flex-end;
+  margin-right: 120px;
+  margin-top: 40px;
+}
+
+.nav-lista {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.nav-enlace {
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-enlace:hover {
+  text-decoration: underline;
+}
+
+.header-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  transform: translateX(-400px);
+}
+
+.header-titulo {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin: 300px 0 0 0;
+}
+
+.header-descripcion {
+  font-size: 25px;
+  color: #ddd;
+  margin: 20px 0 0 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.header-boton {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0.8rem 2rem;
+  width: 250px;
+  height: 60px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-icono {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.header-boton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+}
+
+.header-boton:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.footer {
+  background: #fff;
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
